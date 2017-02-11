@@ -24,4 +24,4 @@ unstable = ["asm", "core_intrinsics", "const_fn", "once"]
 default = ["unstable"]
 
 [target.thumbv6m-none-eabi.dependencies]
-cm0_atomic = { git = "https://github.com/AltOS-Rust/altos-rust/tree/master/altos-rust/altos-core/libs/cm0_atomic" }
+cm0_atomic = { git = "https://github.com/dnseitz/cm0-atomic" }
