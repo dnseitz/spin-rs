@@ -6,6 +6,7 @@
 #![cfg_attr(feature = "asm", feature(asm))]
 #![cfg_attr(feature = "core_intrinsics", feature(core_intrinsics))]
 #![cfg_attr(feature = "const_fn", feature(const_fn))]
+#![feature(cfg_target_has_atomic)]
 
 #![no_std]
 
