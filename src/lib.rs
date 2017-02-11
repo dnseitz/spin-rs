@@ -13,6 +13,12 @@
 #[macro_use]
 extern crate std;
 
+#[cfg(not(target_has_atomic="ptr"))]
+extern crate cm0_atomic as atomic;
+
+#[cfg(target_has_atomic="ptr")]
+use core::sync::atomic as atomic;
+
 pub use mutex::*;
 pub use rw_lock::*;
 

@@ -1,5 +1,5 @@
 use core::cell::UnsafeCell;
-use core::sync::atomic::{AtomicUsize, Ordering};
+use atomic::{AtomicUsize, Ordering};
 
 use util::cpu_relax;
 

@@ -1,4 +1,4 @@
-use core::sync::atomic::{AtomicBool, Ordering, ATOMIC_BOOL_INIT};
+use atomic::{AtomicBool, Ordering, ATOMIC_BOOL_INIT};
 use core::cell::UnsafeCell;
 use core::marker::Sync;
 use core::ops::{Drop, Deref, DerefMut};
